@@ -100,6 +100,7 @@
             this.Controls.Add(this.DetailBtn);
             this.Controls.Add(this.ProductDgv);
             this.Name = "ProductManagementForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductManagementForm";
             this.Load += new System.EventHandler(this.ProductManagementForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ProductDgv)).EndInit();

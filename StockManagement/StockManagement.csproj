@@ -88,11 +88,29 @@
       <DependentUpon>202312030817241_init_tables.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Pages\CostumerManagementForm.cs">
+    <Compile Include="Pages\CustomerAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pages\CostumerManagementForm.Designer.cs">
-      <DependentUpon>CostumerManagementForm.cs</DependentUpon>
+    <Compile Include="Pages\CustomerAdd.Designer.cs">
+      <DependentUpon>CustomerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomerManagementForm.Designer.cs">
+      <DependentUpon>CustomerManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomerDetail.Designer.cs">
+      <DependentUpon>CustomerDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomerUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomerUpdate.Designer.cs">
+      <DependentUpon>CustomerUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\ProductAdd.cs">
       <SubType>Form</SubType>
@@ -141,6 +159,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312030817241_init_tables.resx">
       <DependentUpon>202312030817241_init_tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\CustomerAdd.resx">
+      <DependentUpon>CustomerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\CustomerManagementForm.resx">
+      <DependentUpon>CustomerManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\CustomerDetail.resx">
+      <DependentUpon>CustomerDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\CustomerUpdate.resx">
+      <DependentUpon>CustomerUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\ProductAdd.resx">
       <DependentUpon>ProductAdd.cs</DependentUpon>

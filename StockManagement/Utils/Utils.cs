@@ -39,5 +39,13 @@ namespace StockManagement.Utils
             }
             return ProductImgPath;
         }
+
+        public static void ClearAllTextBox(List<TextBox> textboxs)
+        {
+            foreach (var item in textboxs)
+            {
+                item.Clear();
+            }
+        }
     }
 }

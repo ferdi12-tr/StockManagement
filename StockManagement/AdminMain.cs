@@ -30,7 +30,7 @@ namespace StockManagement
 
         private void CustomerManagementBtn_Click(object sender, EventArgs e)
         {
-            new CostumerManagementForm().ShowDialog();  
+            new CustomerManagementForm().ShowDialog();  
         }
 
         private void SalesReportBtn_Click(object sender, EventArgs e)

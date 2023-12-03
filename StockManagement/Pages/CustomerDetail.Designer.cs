@@ -1,6 +1,6 @@
 ﻿namespace StockManagement.Pages
 {
-    partial class ProductAdd
+    partial class CustomerDetail
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.PasswordLbl = new System.Windows.Forms.Label();
+            this.EmailLbl = new System.Windows.Forms.Label();
+            this.SurnameLbl = new System.Windows.Forms.Label();
+            this.RoleLbl = new System.Windows.Forms.Label();
             this.DescriptionLbl = new System.Windows.Forms.Label();
+            this.NameLbl = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -41,33 +46,78 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ProductPb = new System.Windows.Forms.PictureBox();
-            this.NameTxt = new System.Windows.Forms.TextBox();
-            this.DescriptionTxt = new System.Windows.Forms.TextBox();
-            this.PriceTxt = new System.Windows.Forms.TextBox();
-            this.StockTxt = new System.Windows.Forms.TextBox();
-            this.CategoryCb = new System.Windows.Forms.ComboBox();
-            this.SelectImageBtn = new System.Windows.Forms.Button();
-            this.StatusCb = new System.Windows.Forms.CheckBox();
-            this.InfoLbl = new System.Windows.Forms.Label();
-            this.AddBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.ProductPb)).BeginInit();
+            this.CustomerPb = new System.Windows.Forms.PictureBox();
+            this.StatusLbl = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerPb)).BeginInit();
             this.SuspendLayout();
+            // 
+            // PasswordLbl
+            // 
+            this.PasswordLbl.AutoSize = true;
+            this.PasswordLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.PasswordLbl.Location = new System.Drawing.Point(509, 277);
+            this.PasswordLbl.Name = "PasswordLbl";
+            this.PasswordLbl.Size = new System.Drawing.Size(98, 25);
+            this.PasswordLbl.TabIndex = 37;
+            this.PasswordLbl.Text = "Password";
+            // 
+            // EmailLbl
+            // 
+            this.EmailLbl.AutoSize = true;
+            this.EmailLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.EmailLbl.Location = new System.Drawing.Point(509, 220);
+            this.EmailLbl.Name = "EmailLbl";
+            this.EmailLbl.Size = new System.Drawing.Size(60, 25);
+            this.EmailLbl.TabIndex = 36;
+            this.EmailLbl.Text = "Email";
+            // 
+            // SurnameLbl
+            // 
+            this.SurnameLbl.AutoSize = true;
+            this.SurnameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SurnameLbl.Location = new System.Drawing.Point(509, 70);
+            this.SurnameLbl.Name = "SurnameLbl";
+            this.SurnameLbl.Size = new System.Drawing.Size(92, 25);
+            this.SurnameLbl.TabIndex = 35;
+            this.SurnameLbl.Text = "Surname";
+            // 
+            // RoleLbl
+            // 
+            this.RoleLbl.AutoSize = true;
+            this.RoleLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.RoleLbl.Location = new System.Drawing.Point(509, 117);
+            this.RoleLbl.Name = "RoleLbl";
+            this.RoleLbl.Size = new System.Drawing.Size(51, 25);
+            this.RoleLbl.TabIndex = 34;
+            this.RoleLbl.Text = "Role";
             // 
             // DescriptionLbl
             // 
             this.DescriptionLbl.AutoSize = true;
             this.DescriptionLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DescriptionLbl.Location = new System.Drawing.Point(523, 82);
+            this.DescriptionLbl.Location = new System.Drawing.Point(509, 167);
             this.DescriptionLbl.Name = "DescriptionLbl";
-            this.DescriptionLbl.Size = new System.Drawing.Size(0, 25);
+            this.DescriptionLbl.Size = new System.Drawing.Size(109, 25);
             this.DescriptionLbl.TabIndex = 33;
+            this.DescriptionLbl.Text = "Description";
+            // 
+            // NameLbl
+            // 
+            this.NameLbl.AutoSize = true;
+            this.NameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.NameLbl.Location = new System.Drawing.Point(509, 25);
+            this.NameLbl.Name = "NameLbl";
+            this.NameLbl.Size = new System.Drawing.Size(64, 25);
+            this.NameLbl.TabIndex = 32;
+            this.NameLbl.Text = "Name";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(489, 283);
+            this.label5.Location = new System.Drawing.Point(475, 277);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(18, 25);
             this.label5.TabIndex = 31;
@@ -77,7 +127,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(489, 226);
+            this.label6.Location = new System.Drawing.Point(475, 220);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(18, 25);
             this.label6.TabIndex = 30;
@@ -87,7 +137,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(489, 178);
+            this.label9.Location = new System.Drawing.Point(475, 70);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(18, 25);
             this.label9.TabIndex = 29;
@@ -97,7 +147,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(489, 129);
+            this.label10.Location = new System.Drawing.Point(475, 117);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(18, 25);
             this.label10.TabIndex = 28;
@@ -107,7 +157,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(489, 82);
+            this.label11.Location = new System.Drawing.Point(475, 167);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(18, 25);
             this.label11.TabIndex = 27;
@@ -117,7 +167,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(489, 31);
+            this.label12.Location = new System.Drawing.Point(475, 25);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(18, 25);
             this.label12.TabIndex = 26;
@@ -127,162 +177,115 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(291, 283);
+            this.label7.Location = new System.Drawing.Point(277, 277);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 25);
+            this.label7.Size = new System.Drawing.Size(98, 25);
             this.label7.TabIndex = 25;
-            this.label7.Text = "Status";
+            this.label7.Text = "Password";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(291, 226);
+            this.label8.Location = new System.Drawing.Point(277, 220);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(62, 25);
+            this.label8.Size = new System.Drawing.Size(60, 25);
             this.label8.TabIndex = 24;
-            this.label8.Text = "Stock";
+            this.label8.Text = "Email";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(291, 178);
+            this.label3.Location = new System.Drawing.Point(277, 70);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 25);
+            this.label3.Size = new System.Drawing.Size(92, 25);
             this.label3.TabIndex = 23;
-            this.label3.Text = "Price";
+            this.label3.Text = "Surname";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(291, 129);
+            this.label4.Location = new System.Drawing.Point(277, 117);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(164, 25);
+            this.label4.Size = new System.Drawing.Size(51, 25);
             this.label4.TabIndex = 22;
-            this.label4.Text = "Product Category";
+            this.label4.Text = "Role";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(291, 82);
+            this.label2.Location = new System.Drawing.Point(277, 167);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 25);
+            this.label2.Size = new System.Drawing.Size(109, 25);
             this.label2.TabIndex = 21;
-            this.label2.Text = "Product Description";
+            this.label2.Text = "Description";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(291, 31);
+            this.label1.Location = new System.Drawing.Point(277, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 25);
+            this.label1.Size = new System.Drawing.Size(64, 25);
             this.label1.TabIndex = 20;
-            this.label1.Text = "Product Name";
+            this.label1.Text = "Name";
             // 
-            // ProductPb
+            // CustomerPb
             // 
-            this.ProductPb.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ProductPb.Location = new System.Drawing.Point(35, 31);
-            this.ProductPb.Name = "ProductPb";
-            this.ProductPb.Size = new System.Drawing.Size(191, 199);
-            this.ProductPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ProductPb.TabIndex = 19;
-            this.ProductPb.TabStop = false;
+            this.CustomerPb.Location = new System.Drawing.Point(21, 25);
+            this.CustomerPb.Name = "CustomerPb";
+            this.CustomerPb.Size = new System.Drawing.Size(191, 199);
+            this.CustomerPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CustomerPb.TabIndex = 19;
+            this.CustomerPb.TabStop = false;
             // 
-            // NameTxt
+            // StatusLbl
             // 
-            this.NameTxt.Location = new System.Drawing.Point(528, 33);
-            this.NameTxt.Name = "NameTxt";
-            this.NameTxt.Size = new System.Drawing.Size(176, 22);
-            this.NameTxt.TabIndex = 38;
+            this.StatusLbl.AutoSize = true;
+            this.StatusLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.StatusLbl.Location = new System.Drawing.Point(509, 329);
+            this.StatusLbl.Name = "StatusLbl";
+            this.StatusLbl.Size = new System.Drawing.Size(68, 25);
+            this.StatusLbl.TabIndex = 40;
+            this.StatusLbl.Text = "Status";
             // 
-            // DescriptionTxt
+            // label14
             // 
-            this.DescriptionTxt.Location = new System.Drawing.Point(528, 82);
-            this.DescriptionTxt.Name = "DescriptionTxt";
-            this.DescriptionTxt.Size = new System.Drawing.Size(176, 22);
-            this.DescriptionTxt.TabIndex = 39;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Location = new System.Drawing.Point(475, 329);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(18, 25);
+            this.label14.TabIndex = 39;
+            this.label14.Text = ":";
             // 
-            // PriceTxt
+            // label15
             // 
-            this.PriceTxt.Location = new System.Drawing.Point(528, 182);
-            this.PriceTxt.Name = "PriceTxt";
-            this.PriceTxt.Size = new System.Drawing.Size(176, 22);
-            this.PriceTxt.TabIndex = 41;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(277, 329);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(68, 25);
+            this.label15.TabIndex = 38;
+            this.label15.Text = "Status";
             // 
-            // StockTxt
-            // 
-            this.StockTxt.Location = new System.Drawing.Point(528, 226);
-            this.StockTxt.Name = "StockTxt";
-            this.StockTxt.Size = new System.Drawing.Size(176, 22);
-            this.StockTxt.TabIndex = 42;
-            // 
-            // CategoryCb
-            // 
-            this.CategoryCb.FormattingEnabled = true;
-            this.CategoryCb.Location = new System.Drawing.Point(553, 133);
-            this.CategoryCb.Name = "CategoryCb";
-            this.CategoryCb.Size = new System.Drawing.Size(121, 24);
-            this.CategoryCb.TabIndex = 44;
-            // 
-            // SelectImageBtn
-            // 
-            this.SelectImageBtn.Location = new System.Drawing.Point(35, 251);
-            this.SelectImageBtn.Name = "SelectImageBtn";
-            this.SelectImageBtn.Size = new System.Drawing.Size(191, 34);
-            this.SelectImageBtn.TabIndex = 46;
-            this.SelectImageBtn.Text = "Select Image";
-            this.SelectImageBtn.UseVisualStyleBackColor = true;
-            this.SelectImageBtn.Click += new System.EventHandler(this.SelectImageBtn_Click);
-            // 
-            // StatusCb
-            // 
-            this.StatusCb.AutoSize = true;
-            this.StatusCb.Location = new System.Drawing.Point(528, 283);
-            this.StatusCb.Name = "StatusCb";
-            this.StatusCb.Size = new System.Drawing.Size(66, 20);
-            this.StatusCb.TabIndex = 47;
-            this.StatusCb.Text = "Active";
-            this.StatusCb.UseVisualStyleBackColor = true;
-            // 
-            // InfoLbl
-            // 
-            this.InfoLbl.AutoSize = true;
-            this.InfoLbl.Location = new System.Drawing.Point(525, 338);
-            this.InfoLbl.Name = "InfoLbl";
-            this.InfoLbl.Size = new System.Drawing.Size(51, 16);
-            this.InfoLbl.TabIndex = 48;
-            this.InfoLbl.Text = "label13";
-            // 
-            // AddBtn
-            // 
-            this.AddBtn.Location = new System.Drawing.Point(528, 398);
-            this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(123, 35);
-            this.AddBtn.TabIndex = 49;
-            this.AddBtn.Text = "Add";
-            this.AddBtn.UseVisualStyleBackColor = true;
-            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
-            // 
-            // ProductAdd
+            // CustomerDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(923, 463);
-            this.Controls.Add(this.AddBtn);
-            this.Controls.Add(this.InfoLbl);
-            this.Controls.Add(this.StatusCb);
-            this.Controls.Add(this.SelectImageBtn);
-            this.Controls.Add(this.CategoryCb);
-            this.Controls.Add(this.StockTxt);
-            this.Controls.Add(this.PriceTxt);
-            this.Controls.Add(this.DescriptionTxt);
-            this.Controls.Add(this.NameTxt);
+            this.ClientSize = new System.Drawing.Size(807, 397);
+            this.Controls.Add(this.StatusLbl);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.PasswordLbl);
+            this.Controls.Add(this.EmailLbl);
+            this.Controls.Add(this.SurnameLbl);
+            this.Controls.Add(this.RoleLbl);
             this.Controls.Add(this.DescriptionLbl);
+            this.Controls.Add(this.NameLbl);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label9);
@@ -295,20 +298,25 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ProductPb);
-            this.Name = "ProductAdd";
+            this.Controls.Add(this.CustomerPb);
+            this.Name = "CustomerDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ProductAdd";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ProductAdd_FormClosed);
-            this.Load += new System.EventHandler(this.ProductAdd_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ProductPb)).EndInit();
+            this.Text = "CustomerDetail";
+            this.Load += new System.EventHandler(this.CustomerDetail_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerPb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label PasswordLbl;
+        private System.Windows.Forms.Label EmailLbl;
+        private System.Windows.Forms.Label SurnameLbl;
+        private System.Windows.Forms.Label RoleLbl;
         private System.Windows.Forms.Label DescriptionLbl;
+        private System.Windows.Forms.Label NameLbl;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
@@ -321,15 +329,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox ProductPb;
-        private System.Windows.Forms.TextBox NameTxt;
-        private System.Windows.Forms.TextBox DescriptionTxt;
-        private System.Windows.Forms.TextBox PriceTxt;
-        private System.Windows.Forms.TextBox StockTxt;
-        private System.Windows.Forms.ComboBox CategoryCb;
-        private System.Windows.Forms.Button SelectImageBtn;
-        private System.Windows.Forms.CheckBox StatusCb;
-        private System.Windows.Forms.Label InfoLbl;
-        private System.Windows.Forms.Button AddBtn;
+        private System.Windows.Forms.PictureBox CustomerPb;
+        private System.Windows.Forms.Label StatusLbl;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }

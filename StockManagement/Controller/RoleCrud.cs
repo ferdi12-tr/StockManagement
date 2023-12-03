@@ -24,7 +24,7 @@ namespace StockManagement.Controller
 
         public List<Role> GetAll()
         {
-            throw new NotImplementedException();
+            return _db.Role.Where(x => x.IsDelete == false).ToList();
         }
 
         public Role GetById(int id)
