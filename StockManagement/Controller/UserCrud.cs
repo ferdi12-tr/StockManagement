@@ -5,11 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StockManagement.Data;
 
 namespace StockManagement.Controller
 {
     public class UserCrud : ICrud<User>
     {
+        DataContext _db = new DataContext();
         public bool Add(User entity)
         {
             throw new NotImplementedException();
@@ -22,7 +24,7 @@ namespace StockManagement.Controller
 
         public List<User> GetAll()
         {
-            throw new NotImplementedException();
+            return _db.User.Where(x => x.IsDelete == false).ToList();
         }
 
         public User GetById(int id)

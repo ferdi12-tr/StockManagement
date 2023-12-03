@@ -5,11 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StockManagement.Data;
 
 namespace StockManagement.Controller
 {
     public class CategoryCrud : ICrud<Category>
     {
+        DataContext _db = new DataContext();
         public bool Add(Category entity)
         {
             throw new NotImplementedException();
@@ -22,12 +24,15 @@ namespace StockManagement.Controller
 
         public List<Category> GetAll()
         {
-            throw new NotImplementedException();
+            return _db.Category.Where(x => x.IsDelete == false).ToList();
         }
 
         public Category GetById(int id)
         {
-            throw new NotImplementedException();
+            var category = _db.Category.Find(id);
+            if (category != null)
+                return category;
+            throw new Exception("Cannot Found Category");
         }
 
         public bool Update(Category entity, int id)

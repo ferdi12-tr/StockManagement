@@ -5,11 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StockManagement.Data;
 
 namespace StockManagement.Controller
 {
     public class RoleCrud : ICrud<Role>
     {
+        DataContext _db = new DataContext();
         public bool Add(Role entity)
         {
             throw new NotImplementedException();
@@ -27,7 +29,9 @@ namespace StockManagement.Controller
 
         public Role GetById(int id)
         {
-            throw new NotImplementedException();
+            var role = _db.Role.Find(id);
+            if (role != null) return role;
+            return null;
         }
 
         public bool Update(Role entity, int id)
