@@ -66,6 +66,7 @@
     <Compile Include="Controller\OrderCrud.cs" />
     <Compile Include="Controller\ProductCrud.cs" />
     <Compile Include="Controller\RoleCrud.cs" />
+    <Compile Include="Controller\SellCrud.cs" />
     <Compile Include="Controller\UserCrud.cs" />
     <Compile Include="Data\DataContext.cs" />
     <Compile Include="Entity\Abstracts\CommonProperties.cs" />
@@ -86,6 +87,14 @@
     <Compile Include="Migrations\202312030817241_init_tables.cs" />
     <Compile Include="Migrations\202312030817241_init_tables.designer.cs">
       <DependentUpon>202312030817241_init_tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312032302270_updateOrder.cs" />
+    <Compile Include="Migrations\202312032302270_updateOrder.designer.cs">
+      <DependentUpon>202312032302270_updateOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312032307522_updateOrderAndSell.cs" />
+    <Compile Include="Migrations\202312032307522_updateOrderAndSell.designer.cs">
+      <DependentUpon>202312032307522_updateOrderAndSell.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Pages\CustomerAdd.cs">
@@ -124,6 +133,12 @@
     <Compile Include="Pages\ProductDetail.Designer.cs">
       <DependentUpon>ProductDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\ProductList.Designer.cs">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ProductManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +175,12 @@
     <EmbeddedResource Include="Migrations\202312030817241_init_tables.resx">
       <DependentUpon>202312030817241_init_tables.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312032302270_updateOrder.resx">
+      <DependentUpon>202312032302270_updateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312032307522_updateOrderAndSell.resx">
+      <DependentUpon>202312032307522_updateOrderAndSell.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\CustomerAdd.resx">
       <DependentUpon>CustomerAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\ProductDetail.resx">
       <DependentUpon>ProductDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ProductList.resx">
+      <DependentUpon>ProductList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\ProductManagementForm.resx">
       <DependentUpon>ProductManagementForm.cs</DependentUpon>

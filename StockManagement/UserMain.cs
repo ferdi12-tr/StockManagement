@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StockManagement.Pages;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace StockManagement
         public UserMain()
         {
             InitializeComponent();
+        }
+
+        private void UserMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ProductListBtn_Click(object sender, EventArgs e)
+        {
+            new ProductList().ShowDialog();
         }
     }
 }

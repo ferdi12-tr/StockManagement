@@ -1,26 +1,26 @@
-﻿using StockManagement.Entity.Interfaces;
+﻿using StockManagement.Data;
 using StockManagement.Entity;
+using StockManagement.Entity.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using StockManagement.Data;
 
 namespace StockManagement.Controller
 {
-    public class OrderCrud : ICrud<Order>
+    internal class SellCrud : ICrud<SellProduct>
     {
         DataContext _db = new DataContext();
-        public bool Add(Order entity)
+        public bool Add(SellProduct entity)
         {
             if (entity != null)
             {
-                _db.Order.Add(entity);
+                _db.SellProduct.Add(entity);
                 _db.SaveChanges();
                 return true;
             }
-            return false;
+            return false;   
         }
 
         public bool Delete(int id)
@@ -28,17 +28,17 @@ namespace StockManagement.Controller
             throw new NotImplementedException();
         }
 
-        public List<Order> GetAll()
+        public List<SellProduct> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Order GetById(int id)
+        public SellProduct GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public bool Update(Order entity, int id)
+        public bool Update(SellProduct entity, int id)
         {
             throw new NotImplementedException();
         }

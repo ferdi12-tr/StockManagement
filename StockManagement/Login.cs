@@ -36,7 +36,7 @@ namespace StockManagement
             var email = EmailTxt.Text.Trim();
             var password = PasswordTxt.Text.Trim();
 
-            var user = _userCrud.GetAll().Find(x => x.Name == email && x.Password == password);
+            var user = _userCrud.GetAll().Find(x => x.Email == email && x.Password == password);
             if (user == null) 
             {
                 LoginStatusLbl.Visible = true;
@@ -44,6 +44,7 @@ namespace StockManagement
             }
             else
             {
+                Utils.Utils.SetCurrentUser(user);
                 var role = _roleCrud.GetById(user.RoleId);
                 if (role != null)
                 {
@@ -51,7 +52,7 @@ namespace StockManagement
                     {
                         new AdminMain().Show();
                     }
-                    else if (role.Name == "User")
+                    else if (role.Name == "Customer")
                     {
                         new UserMain().Show();
                     }

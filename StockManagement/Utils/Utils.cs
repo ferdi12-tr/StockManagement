@@ -11,6 +11,16 @@ namespace StockManagement.Utils
 {
     public class Utils
     {
+        static User _user;
+        public static void SetCurrentUser(User user)
+        {
+            _user = user;
+        }
+
+        public static User GetCurrentUser()
+        {
+            return _user;
+        }
         public static void UploadImage(PictureBox pictureBox)
         {
             OpenFileDialog ofd = new OpenFileDialog();
