@@ -80,7 +80,9 @@
             // 
             this.CustomerDgv.AllowUserToAddRows = false;
             this.CustomerDgv.AllowUserToDeleteRows = false;
+            this.CustomerDgv.BackgroundColor = System.Drawing.SystemColors.Control;
             this.CustomerDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CustomerDgv.GridColor = System.Drawing.SystemColors.Control;
             this.CustomerDgv.Location = new System.Drawing.Point(30, 12);
             this.CustomerDgv.Name = "CustomerDgv";
             this.CustomerDgv.ReadOnly = true;
@@ -99,6 +101,7 @@
             this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.DetailBtn);
             this.Controls.Add(this.CustomerDgv);
+            this.MaximizeBox = false;
             this.Name = "CustomerManagementForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CostumerManagementForm";

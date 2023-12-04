@@ -40,13 +40,14 @@
             // 
             this.ProductDgv.AllowUserToAddRows = false;
             this.ProductDgv.AllowUserToDeleteRows = false;
+            this.ProductDgv.BackgroundColor = System.Drawing.SystemColors.Control;
             this.ProductDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ProductDgv.Location = new System.Drawing.Point(13, 13);
             this.ProductDgv.Name = "ProductDgv";
             this.ProductDgv.ReadOnly = true;
             this.ProductDgv.RowHeadersWidth = 51;
             this.ProductDgv.RowTemplate.Height = 24;
-            this.ProductDgv.Size = new System.Drawing.Size(1210, 351);
+            this.ProductDgv.Size = new System.Drawing.Size(1102, 351);
             this.ProductDgv.TabIndex = 0;
             // 
             // DetailBtn
@@ -93,12 +94,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1235, 729);
+            this.ClientSize = new System.Drawing.Size(1150, 729);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.UpdateBtn);
             this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.DetailBtn);
             this.Controls.Add(this.ProductDgv);
+            this.MaximizeBox = false;
             this.Name = "ProductManagementForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductManagementForm";

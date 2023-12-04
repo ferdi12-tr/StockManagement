@@ -32,6 +32,7 @@ namespace StockManagement.Pages
             CustomerDgv.DataSource  = _userCrud.GetAll();
             CustomerDgv.Columns["RoleId"].Visible = false;
             CustomerDgv.Columns["Id"].Visible = false;
+            CustomerDgv.Columns["Image"].Visible = false;
             CustomerDgv.ClearSelection();
         }
 
