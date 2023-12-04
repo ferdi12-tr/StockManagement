@@ -73,6 +73,7 @@
             this.Text = "UserMain";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UserMain_Load);
+            this.SizeChanged += new System.EventHandler(this.UserMain_SizeChanged);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

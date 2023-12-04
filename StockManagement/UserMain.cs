@@ -20,7 +20,7 @@ namespace StockManagement
 
         private void UserMain_Load(object sender, EventArgs e)
         {
-
+            Utils.Utils.LocatePanelOnForm(this, panel1);
         }
 
         private void ProductListBtn_Click(object sender, EventArgs e)
@@ -31,6 +31,11 @@ namespace StockManagement
         private void BasketBtn_Click(object sender, EventArgs e)
         {
             new BasketList().ShowDialog();
+        }
+
+        private void UserMain_SizeChanged(object sender, EventArgs e)
+        {
+            Utils.Utils.LocatePanelOnForm(this, panel1);
         }
     }
 }

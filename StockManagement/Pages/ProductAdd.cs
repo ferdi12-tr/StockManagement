@@ -55,10 +55,7 @@ namespace StockManagement.Pages
             InfoLbl.Visible= true;
             InfoLbl.Text = check ? "Product Added" : "Cannot Add Product";
 
-            NameTxt.Clear();
-            DescriptionTxt.Clear();
-            PriceTxt.Clear();
-            StockTxt.Clear();
+            Utils.Utils.ClearAllTextBox(new List<TextBox>() { NameTxt, DescriptionTxt, PriceTxt, StockTxt });
             ProductPb.Image = null;
             StatusCb.Checked = false;
 

@@ -1,6 +1,7 @@
 ﻿using StockManagement.Entity;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
@@ -56,6 +57,15 @@ namespace StockManagement.Utils
             {
                 item.Clear();
             }
+        }
+
+        public static void LocatePanelOnForm(Form form, Panel panel)
+        {
+            int formWidth = form.Width / 2 - panel.Width / 2;
+            int formHeight = form.Height / 2 - panel.Height / 2;
+
+            panel.Location = new Point(formWidth, formHeight);
+
         }
     }
 }
