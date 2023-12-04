@@ -97,6 +97,12 @@
       <DependentUpon>202312032307522_updateOrderAndSell.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Pages\BasketList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\BasketList.Designer.cs">
+      <DependentUpon>BasketList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CustomerAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202312032307522_updateOrderAndSell.resx">
       <DependentUpon>202312032307522_updateOrderAndSell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\BasketList.resx">
+      <DependentUpon>BasketList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\CustomerAdd.resx">
       <DependentUpon>CustomerAdd.cs</DependentUpon>

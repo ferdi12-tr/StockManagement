@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using StockManagement.Data;
+using System.CodeDom;
 
 namespace StockManagement.Controller
 {
@@ -25,12 +26,19 @@ namespace StockManagement.Controller
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            var order = _db.Order.Find(id);
+            if (order != null)
+            {
+                order.İsDelete = true;
+                _db.SaveChanges();
+                return true;
+            }
+            throw new Exception("Cannot Delete Order");
         }
 
         public List<Order> GetAll()
         {
-            throw new NotImplementedException();
+            return _db.Order.Where(x => x.İsDelete == false).ToList();
         }
 
         public Order GetById(int id)

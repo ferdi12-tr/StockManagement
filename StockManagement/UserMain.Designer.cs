@@ -51,6 +51,7 @@
             this.BasketBtn.TabIndex = 5;
             this.BasketBtn.Text = "Basket";
             this.BasketBtn.UseVisualStyleBackColor = true;
+            this.BasketBtn.Click += new System.EventHandler(this.BasketBtn_Click);
             // 
             // ProductListBtn
             // 

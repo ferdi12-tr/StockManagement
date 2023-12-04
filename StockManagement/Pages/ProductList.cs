@@ -15,9 +15,7 @@ namespace StockManagement.Pages
     public partial class ProductList : Form
     {
         ProductCrud _productCrud = new ProductCrud();
-        CategoryCrud _categoryCrud = new CategoryCrud();
         OrderCrud _orderCrud = new OrderCrud();
-        SellCrud _sellCrud = new SellCrud();
 
         GroupBox productGb;
         PictureBox productPicture;

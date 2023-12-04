@@ -48,6 +48,7 @@ namespace StockManagement
                 var role = _roleCrud.GetById(user.RoleId);
                 if (role != null)
                 {
+                    this.Visible = false;
                     if (role.Name == "Admin")
                     {
                         new AdminMain().Show();

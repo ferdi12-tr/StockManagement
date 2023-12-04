@@ -1,6 +1,7 @@
 ﻿using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -20,5 +21,14 @@ namespace StockManagement.Entity
         public int Quantity { get; set; }
         public bool İsDelete { get; set; }
         public List<SellProduct> SellProductList { get; set; }
+
+        //temporarySolution
+        [NotMapped]
+        public string ProductName { get; set; }
+        [NotMapped]
+        public string UserName { get; set; }
+
+        [NotMapped]
+        public double TotalPayAmount { get; set; }
     }
 }

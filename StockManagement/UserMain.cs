@@ -27,5 +27,10 @@ namespace StockManagement
         {
             new ProductList().ShowDialog();
         }
+
+        private void BasketBtn_Click(object sender, EventArgs e)
+        {
+            new BasketList().ShowDialog();
+        }
     }
 }
