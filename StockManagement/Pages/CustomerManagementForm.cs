@@ -32,16 +32,17 @@ namespace StockManagement.Pages
             CustomerDgv.DataSource  = _userCrud.GetAll();
             CustomerDgv.Columns["RoleId"].Visible = false;
             CustomerDgv.Columns["Id"].Visible = false;
+            CustomerDgv.ClearSelection();
         }
 
         private void DetailBtn_Click(object sender, EventArgs e)
         {
-            var selectedId = CustomerDgv.SelectedRows[0].Cells["Id"].Value;
-            if (selectedId == null)
+            if (CustomerDgv.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Please select a product from list");
+                MessageBox.Show("Please select a user from list");
                 return;
             }
+            var selectedId = CustomerDgv.SelectedRows[0].Cells["Id"].Value;
             int id = Convert.ToInt32(selectedId);
             new CustomerDetail(id).ShowDialog();
         }
@@ -53,6 +54,12 @@ namespace StockManagement.Pages
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
+            if (CustomerDgv.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a user from list");
+                return;
+            }
+
             var selectedId = CustomerDgv.SelectedRows[0].Cells["Id"].Value;
             DialogResult result = MessageBox.Show(
                     $"Are you sure to delete {CustomerDgv.SelectedRows[0].Cells["Name"].Value}",
@@ -69,12 +76,12 @@ namespace StockManagement.Pages
 
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
-            var selectedId = CustomerDgv.SelectedRows[0].Cells["Id"].Value;
-            if (selectedId == null)
+            if (CustomerDgv.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Please select a user from list");
                 return;
             }
+            var selectedId = CustomerDgv.SelectedRows[0].Cells["Id"].Value;
             int id = Convert.ToInt32(selectedId);
             new CustomerUpdate(id).ShowDialog();
         }

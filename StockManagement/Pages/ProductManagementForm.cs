@@ -32,20 +32,18 @@ namespace StockManagement.Pages
 
             ProductDgv.DataSource = products;
             ProductDgv.Columns["CategoryId"].Visible = false;
-            //ProductDgv.Columns["Category"].Visible = false;
             ProductDgv.Columns["Id"].Visible = false;
-            //ProductDgv.Columns["IsStatus"].Visible = false;
-            //ProductDgv.Columns["IsDelete"].Visible = false;
+            ProductDgv.ClearSelection();
         }
 
         private void DetailBtn_Click(object sender, EventArgs e)
         {
-            var selectedId = ProductDgv.SelectedRows[0].Cells["Id"].Value;
-            if (selectedId == null)
+            if (ProductDgv.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Please select a product from list");
                 return;
             }
+            var selectedId = ProductDgv.SelectedRows[0].Cells["Id"].Value;
             int id = Convert.ToInt32(selectedId);
             new ProductDetail(id).ShowDialog();
         }
@@ -57,6 +55,11 @@ namespace StockManagement.Pages
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
+            if (ProductDgv.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a product from list");
+                return;
+            }
             var selectedId = ProductDgv.SelectedRows[0].Cells["Id"].Value;
             DialogResult result =  MessageBox.Show(
                     $"Are you sure to delete {ProductDgv.SelectedRows[0].Cells["Name"].Value}",
@@ -74,7 +77,7 @@ namespace StockManagement.Pages
         private void UpdateBtn_Click(object sender, EventArgs e)
         {
             var selectedId = ProductDgv.SelectedRows[0].Cells["Id"].Value;
-            if (selectedId == null)
+            if (ProductDgv.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Please select a product from list");
                 return;
