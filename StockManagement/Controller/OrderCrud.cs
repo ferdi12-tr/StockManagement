@@ -43,7 +43,12 @@ namespace StockManagement.Controller
 
         public Order GetById(int id)
         {
-            throw new NotImplementedException();
+            var order = _db.Order.Find(id);
+            if (order != null)
+            {
+                return order;
+            }
+            throw new Exception("Order not Found");
         }
 
         public bool Update(Order entity, int id)

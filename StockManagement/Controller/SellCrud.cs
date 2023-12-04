@@ -30,7 +30,7 @@ namespace StockManagement.Controller
 
         public List<SellProduct> GetAll()
         {
-            throw new NotImplementedException();
+            return _db.SellProduct.ToList();
         }
 
         public SellProduct GetById(int id)
